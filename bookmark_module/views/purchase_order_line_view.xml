@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="purchase.purchase_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="after">
-                <!-- <field name="barcode" option="hide" readonly="1"/> -->
+                <field name="barcode" option="hide" readonly="1"/>
                  <field name="product_internal_reference" readonly="1"/>
             </xpath>
         </field>
