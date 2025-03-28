@@ -20,9 +20,9 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
-    school_id = fields.Many2one(
-        'product.school',
-        related='product_tmpl_id.school_id',
-        store=True,
-        readonly=False
-    )
+    # school_id = fields.Many2one(
+    #     'product.school',
+    #     related='product_tmpl_id.school_id',
+    #     store=True,
+    #     readonly=False
+    # )
