@@ -11,8 +11,8 @@
                     <field name="serie_id"/>
                     <!-- <field name="x_publisher"/>
                     <field name="x_authors"/>
-                    <field name="x_main_supplier"/>
-                    <field name="school_id"/> -->
+                    <field name="x_main_supplier"/> -->
+                    <field name="school_id"/>
                 </group>
               
             </xpath>
