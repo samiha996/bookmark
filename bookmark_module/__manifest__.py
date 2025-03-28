@@ -7,7 +7,7 @@
         Bookmark Module
     """,
     'author': 'Samiha',
-    'depends': ['base','product','purchase','sale','product_school'],   
+    'depends': ['base','product','purchase','sale'],   
     'data': [
         'security/ir.model.access.csv',
         'views/product_product_form_view.xml',
