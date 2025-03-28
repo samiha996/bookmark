@@ -36,7 +36,7 @@ class ProductProduct(models.Model):
     school_id = fields.Many2one(
         'product.school',
         string='School',
-        related='product_template_id.school_id',
+        related='product_tmpl_id.school_id',
         store=True,
         readonly=False
     )
