@@ -5,4 +5,5 @@ class ProductTemplate(models.Model):
 
     department_id = fields.Many2one('department', string='Department')
     serie_id = fields.Many2one('serie', string='Serie')
+    school_id = fields.Many2one('product.school', string="School")
     
