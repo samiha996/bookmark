@@ -23,9 +23,14 @@
                             <field name="subtitle"/>
                             <field name="subtitle2"/>
                         </group>
-                        <field name="x_publisher"/>
+                        <group string="Other Info" class="oe_inline">
+                        <field name="publisher"/>
+                        <field name="main_distributor"/>
+                    
+                    </group>
+<!--                         <field name="x_publisher"/>
                         <field name="x_authors"/>
-                        <field name="x_main_supplier"/>
+                        <field name="x_main_supplier"/> -->
     <!--                     <field name="school_id"/> -->
                 </group>
               
