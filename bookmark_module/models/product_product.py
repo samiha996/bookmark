@@ -33,6 +33,20 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
+    author_id = fields.Many2one(
+        'book.author',
+        string='Author',
+        related='product_tmpl_id.author_id',
+        store=True,
+        readonly=False
+    )
+    author2_id = fields.Many2one(
+        'book.author',
+        string='Author 2',
+        related='product_tmpl_id.author2_id',
+        store=True,
+        readonly=False
+    )
     # school_id = fields.Many2one(
     #     'product.school',
     #     string='School',
