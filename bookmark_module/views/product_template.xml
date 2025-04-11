@@ -23,6 +23,11 @@
                             <field name="subtitle"/>
                             <field name="subtitle2"/>
                         </group>
+                        <group string="Other Info" class="oe_inline">
+                        <field name="publisher"/>
+                        <field name="main_distributor"/>
+                    
+                    </group>
                   
                 </group>
               
