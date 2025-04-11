@@ -18,6 +18,30 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
+    title2 = fields.Char(
+        string='Title 2',
+        related='product_tmpl_id.title2',
+        store=True,
+        readonly=False
+    )
+    subtitle = fields.Char(
+        string='Subtitle',
+        related='product_tmpl_id.subtitle',
+        store=True,
+        readonly=False
+    )
+    subtitle2 = fields.Char(
+        string='Subtitle 2',
+        related='product_tmpl_id.subtitle2',
+        store=True,
+        readonly=False
+    )
+    date_of_publication = fields.Date(
+        string='Date of Publication',
+        related='product_tmpl_id.date_of_publication',
+        store=True,
+        readonly=False
+    )
     x_publisher = fields.Text(
         related='product_tmpl_id.x_Publisher',
         store=True,
