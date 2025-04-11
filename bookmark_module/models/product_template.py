@@ -8,4 +8,8 @@ class ProductTemplate(models.Model):
     school_id = fields.Many2one('product.school', string="School")
     author_id = fields.Many2one('book.author', string="Author")
     author2_id = fields.Many2one('book.author', string="Author 2")
+    title2 = fields.Char(string="Title 2")
+    subtitle = fields.Char(string="Subtitle")
+    subtitle2 = fields.Char(string="Subtitle 2")
+    date_of_publication = fields.Date(string="Date of Publication")
     
