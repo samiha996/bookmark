@@ -7,8 +7,20 @@
         <field name="arch" type="xml">
             <xpath expr="//page[@name='general_information']/group" position="inside">
                 <group>
-                    <field name="department_id"/>
-                    <field name="serie_id"/>
+                    <group string="deptartment and serie" class="oe_inline">
+                        <field name="department_id"/>
+                        <field name="serie_id"/>
+                        <field name="date_of_publication"/>
+                    </group>
+                    <group string="author" class="oe_inline">
+                        <field name="author_id"/>
+                        <field name="author2_id"/>
+                    </group>
+                    <group string="Titles" class="oe_inline">
+                        <field name="title2"/>
+                        <field name="subtitle"/>
+                        <field name="subtitle2"/>
+                    </group>
                   
                 </group>
               
