@@ -71,6 +71,20 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
+    publisher = fields.Many2one(
+        'publisher',
+        string='Publisher',
+        related='product_tmpl_id.publisher',
+        store=True,
+        readonly=False
+    )
+    main_distributor = fields.Many2one(
+        'main.distributor',
+        string='Main Distributor',
+        related='product_tmpl_id.main_distributor',
+        store=True,
+        readonly=False
+    )
     # school_id = fields.Many2one(
     #     'product.school',
     #     string='School',
