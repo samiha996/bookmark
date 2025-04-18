@@ -23,7 +23,7 @@ class PurchaseOrderLine(models.Model):
         store=True,
         readonly=False
     )
-    book_cost = fields.Monetary(
+    book_cost = fields.Float(
         string='Cost',
         related='product_id.standard_price',
         store=True,
