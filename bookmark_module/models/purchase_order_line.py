@@ -23,6 +23,12 @@ class PurchaseOrderLine(models.Model):
         store=True,
         readonly=False
     )
+    book_cost = fields.Monetary(
+        string='Cost',
+        related='product_id.standard_price',
+        store=True,
+        readonly=False
+    )
 
 
 
