@@ -16,3 +16,16 @@ class PurchaseOrderLine(models.Model):
         readonly=True,
         store=False
     )
+    book_publisher = fields.Many2one(
+        'publisher',
+        string='Publisher',
+        related='product_id.publisher',
+        store=True,
+        readonly=False
+    )
+
+
+
+
+
+
