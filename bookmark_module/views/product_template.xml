@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='sale_ok']" position="before">
             <div class="row mt-1">
-                <div class="col-12 d-flex align-items-center">
+                <div class="col-12 d-flex align-items-center mb-1">
                     <label for="barcode">Barcode</label>
                     <field name="barcode" style="font-size:0.85em; margin-bottom:0;" />
                 </div>
@@ -15,10 +15,12 @@
         </xpath>
             
             <xpath expr="//field[@name='detailed_type']" position="after">
-               <group>
-                  
-                    <field name="subtitle"/>
-                </group>
+               <div class="row mt-1">
+                <div class="col-12 d-flex align-items-center">
+                    <label for="barcode">Subtitle</label>
+                    <field name="subtitle" style="font-size:0.85em; margin-bottom:0;" />
+                </div>
+                </div>
             
             </xpath>
             
