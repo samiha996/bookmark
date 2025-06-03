@@ -6,8 +6,15 @@
         <field name="inherit_id" ref="product.product_template_only_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='name']" position="after">
-                <field name="barcode"/>
-            </xpath>
+            <div class="row mt-1">
+                <div class="col-12">
+                    <!-- explicit label above the field -->
+                    <label for="barcode">Barcode</label><br/>
+                    <!-- field itself, with a smaller font-size -->
+                    <field name="barcode" t-att-style="'font-size:0.85em;'" />
+                </div>
+            </div>
+        </xpath>
             <xpath expr="//page[@name='general_information']/group" position="inside">
                 <group>
                         <group string="deptartment and serie" class="oe_inline">
