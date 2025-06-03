@@ -9,7 +9,7 @@
             <div class="row mt-1">
                 <div class="col-12">
                     <!-- explicit label above the field -->
-                    <label for="barcode">Barcode</label><br/>
+                    <label for="barcode">Barcode</label>
                     <!-- field itself, with a smaller font-size -->
                     <field name="barcode" style="'font-size:0.85em;'" />
                 </div>
