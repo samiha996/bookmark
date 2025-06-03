@@ -9,7 +9,7 @@
             <div class="row mt-1">
                 <div class="col-12 d-flex align-items-center">
                     <label for="barcode">Barcode</label>
-                    <field name="barcode" style="'font-size:0.85em;'" />
+                    <field name="barcode" style="font-size:0.85em; margin-bottom:0;" />
                 </div>
             </div>
         </xpath>
