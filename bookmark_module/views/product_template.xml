@@ -11,7 +11,7 @@
                     <!-- explicit label above the field -->
                     <label for="barcode">Barcode</label><br/>
                     <!-- field itself, with a smaller font-size -->
-                    <field name="barcode" t-att-style="'font-size:0.85em;'" />
+                    <field name="barcode" style="'font-size:0.85em;'" />
                 </div>
             </div>
         </xpath>
