@@ -13,6 +13,15 @@
                 </div>
             </div>
         </xpath>
+            
+            <xpath expr="//field[@name='detailed_type']" position="after">
+               <group>
+                  
+                    <field name="subtitle"/>
+                </group>
+            
+            </xpath>
+            
             <xpath expr="//page[@name='general_information']/group" position="inside">
                 <group>
                         <group string="deptartment and serie" class="oe_inline">
