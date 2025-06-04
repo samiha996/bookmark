@@ -13,6 +13,9 @@
                 </div>
             </div>
         </xpath>
+            <xpath expr="//field[@name='detailed_type']" position="replace">
+            <field name="detailed_type" string="Stock Item"/>
+        </xpath>
             
             <xpath expr="//group[@name='group_general']//field[@name='detailed_type']" position="after">
 
