@@ -16,9 +16,9 @@
         <xpath expr="//field[@name='detailed_type']" position="replace">
             <field name="detailed_type" string="Stock Item"/>
         </xpath>
-        <xpath expr="//field[@name='lang_of_origin']" position="replace">
+<!--         <xpath expr="//field[@name='lang_of_origin']" position="replace">
             <field name="lang_of_origin" string="Language"/>
-        </xpath>
+        </xpath> -->
         <xpath expr="//group[@name='group_general']//field[@name='detailed_type']" position="after">
 
                 <field name="subtitle"/>
