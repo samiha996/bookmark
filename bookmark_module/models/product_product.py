@@ -10,6 +10,13 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
+    lang_of_origin = fields.Char(
+        string='Language',
+        related='product_tmpl_id.lang_of_origin',
+        store=True,
+        readonly=False
+    )
+   
 
     serie_id = fields.Many2one(
         'serie',
