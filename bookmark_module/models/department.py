@@ -12,3 +12,11 @@ class Department(models.Model):
     def _compute_product_count(self):
         for department in self:
             department.product_count = len(department.product_ids)
+
+class Keywords(models.Model):
+    _name = 'keywords'
+    _description = 'Keywords'
+
+    name = fields.Text(string='Name', required=True)
+    
+   
