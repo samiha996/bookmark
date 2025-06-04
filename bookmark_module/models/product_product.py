@@ -89,9 +89,11 @@ class ProductProduct(models.Model):
         readonly=False
     )
     keyword_ids = fields.Many2many(
-        related='product_tmpl_id.keyword_ids',
+        comodel_name="product.keyword",
+        related="product_tmpl_id.keyword_ids",
         string="Keywords",
-        store="True", readonly="False"
+        store="True",
+        readonly=False,
     )
     author_id = fields.Many2one(
         'book.author',
