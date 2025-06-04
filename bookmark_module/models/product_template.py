@@ -18,5 +18,5 @@ class ProductTemplate(models.Model):
     url= fields.Char(string="Url")
     bookmark_description = fields.Text(string="Description")
     format_size= fields.Char(string="Format Size")
-    number_page= fields.Char(string="Number of Pages")
+    number_page= fields.Integer(string="Number of Pages")
     
