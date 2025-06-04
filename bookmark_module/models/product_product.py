@@ -88,7 +88,7 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
-     keyword_ids = fields.Many2many(
+    keyword_ids = fields.Many2many(
         related='product_tmpl_id.keyword_ids',
         string="Keywords",
     )
