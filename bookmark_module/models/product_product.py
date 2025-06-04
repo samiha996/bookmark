@@ -92,8 +92,7 @@ class ProductProduct(models.Model):
         comodel_name="keywords",
         related="product_tmpl_id.keyword_ids",
         string="Keywords",
-        store="True",
-        readonly=False,
+        readonly=False,  
     )
     author_id = fields.Many2one(
         'book.author',
