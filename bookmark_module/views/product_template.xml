@@ -65,7 +65,7 @@
                     <group>
                         <field name="bookmark_type"/>
                         <field name="url" widget="url"/>
-                        
+                        <field name="bookmark_description"/>
                     </group>
                     
              
@@ -73,12 +73,7 @@
                 </group>
               
             </xpath>
-            <xpath expr="//field[@name='url']" position="after">
-                <div class="d-flex">
-                        <label for="bookmark_description" class="me-2">Description:</label>
-                        <field name="bookmark_description"/>
-                    </div>
-            </xpath>
+            
         </field>
     </record>
     <record id="product_template_search_view_inherit" model="ir.ui.view">
