@@ -89,7 +89,7 @@ class ProductProduct(models.Model):
         readonly=False
     )
     keyword_ids = fields.Many2many(
-        comodel_name="product.keyword",
+        comodel_name="keywords",
         related="product_tmpl_id.keyword_ids",
         string="Keywords",
         store="True",
