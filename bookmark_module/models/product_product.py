@@ -57,6 +57,31 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
+    bookmark_type = fields.Char(
+        string='Type',
+        related='product_tmpl_id.bookmark_type',
+        store=True,
+        readonly=False
+    )
+    url = fields.Char(
+        string='Url',
+        related='product_tmpl_id.subtitle2',
+        store=True,
+        readonly=False
+    )
+    format_size = fields.Char(
+        string='Format Size',
+        related='product_tmpl_id.format_size',
+        store=True,
+        readonly=False
+    )
+    
+    bookmark_description = fields.Text(
+        string='Description',
+        related='product_tmpl_id.bookmark_description',
+        store=True,
+        readonly=False
+    )
     author_id = fields.Many2one(
         'book.author',
         string='Author',
