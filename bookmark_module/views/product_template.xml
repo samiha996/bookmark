@@ -65,7 +65,7 @@
                     
                         <label for="url">Url</label>
                         <field name="url" widget="url" string="Url"/>
-                        <label for="bookmark_desciption">Description</label>
+                        <label for="bookmark_description">Description</label>
                         <field name="bookmark_description" string="Description"/>
                         
              
