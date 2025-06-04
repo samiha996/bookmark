@@ -14,7 +14,7 @@
             </div>
         </xpath>
             
-            <xpath expr="//field[@name='invoice_policy']" position="before">
+            <xpath expr="//field[@name='type']" position="after">
                <div class="row mt-1 oe_inline">
                 <div class="col-12 d-flex align-items-center">
                     <label for="subtitle">Subtitle</label>
