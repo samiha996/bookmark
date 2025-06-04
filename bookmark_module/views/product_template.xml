@@ -14,7 +14,7 @@
             </div>
         </xpath>
             
-            <xpath expr="//group[@name='group_general']//field['detailed_type']" position="after">
+            <xpath expr="//group[@name='group_general']//field[@name='detailed_type']" position="after">
 <!--                <div class="row mt-1 oe_inline"> -->
 <!--                 <div class="col-12 d-flex align-items-center"> -->
 <!--                     <label for="subtitle">Subtitle</label> -->
