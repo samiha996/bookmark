@@ -75,7 +75,7 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
-    number_page = fields.Char(
+    number_page = fields.Integer(
         string='Number of Pages',
         related='product_tmpl_id.number_page',
         store=True,
