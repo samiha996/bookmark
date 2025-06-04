@@ -41,7 +41,7 @@
                             <field name="format_size"/>
                             <field name="number_page"/>
                             <label for="weight" invisible="product_variant_count &gt; 1 and not is_product_variant"/>
-                            <div name="weight" invisible="product_variant_count &gt; 1 and not is_product_variant">
+                            <div name="weight" class="o_row" invisible="product_variant_count &gt; 1 and not is_product_variant">
                                 <field name="weight" class="oe_inline"/>
                                 <field name="weight_uom_name"/>
                             </div>
@@ -64,8 +64,8 @@
                     </group> -->
                     
                     
-                        <field name="url" widget="url"/>
-                        <field name="bookmark_description"/>
+                        <field name="url" widget="url" string="Url"/>
+                        <field name="bookmark_description" string="Description"/>
                         
              
                   
