@@ -17,6 +17,6 @@ class Keywords(models.Model):
     _name = 'keywords'
     _description = 'Keywords'
 
-    name = fields.Text(string='Name', required=True)
+    name = fields.Text(string='Name', required=True, index=True)
     
    
