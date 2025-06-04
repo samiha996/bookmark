@@ -61,6 +61,7 @@
                     
                     <group>
                         <field name="bookmark_type"/>
+                        <field name="keyword_ids"  widget="many2many_tags"/>
                         <field name="url" widget="url"/>
                         <field name="bookmark_description"/>
                     </group>
