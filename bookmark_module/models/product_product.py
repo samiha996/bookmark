@@ -75,6 +75,12 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
+    number_page = fields.Char(
+        string='Number of Pages',
+        related='product_tmpl_id.number_page',
+        store=True,
+        readonly=False
+    )
     
     bookmark_description = fields.Text(
         string='Description',
