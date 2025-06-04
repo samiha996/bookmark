@@ -88,6 +88,10 @@ class ProductProduct(models.Model):
         store=True,
         readonly=False
     )
+     keyword_ids = fields.Many2many(
+        related='product_tmpl_id.keyword_ids',
+        string="Keywords",
+    )
     author_id = fields.Many2one(
         'book.author',
         string='Author',
