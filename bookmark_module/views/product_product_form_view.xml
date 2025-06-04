@@ -13,6 +13,9 @@
                 </div>
             </div>
         </xpath>
+        <xpath expr="//field[@name='categ_id']" position="before">
+            <field name="lang_of_origin" string='Language'/>
+        </xpath>
         <xpath expr="//field[@name='detailed_type']" position="replace">
             <field name="detailed_type" string="Stock Item"/>
         </xpath>
