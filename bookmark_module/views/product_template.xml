@@ -32,15 +32,15 @@
                             <field name="serie_id"/>
                             <field name="date_of_publication"/>
                         </group>
-                        <group string="author" class="oe_inline">
+<!--                         <group string="author" class="oe_inline">
                             <field name="author_id"/>
                             <field name="author2_id"/>
-                        </group>
+                        </group> -->
                     </group>
                     <group>
                         <group string="Titles" class="oe_inline">
                             <field name="title2"/>
-                            <field name="subtitle"/>
+                    
                             <field name="subtitle2"/>
                         </group>
                         <group string="Other Info" class="oe_inline">
