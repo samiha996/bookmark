@@ -9,15 +9,17 @@
             <div class="row mt-1">
                 <div class="col-12 d-flex align-items-center mb-1">
                     <label for="barcode">Barcode</label>
-                    <field name="barcode" style="font-size:0.85em; margin-bottom:0;" />
+                    <field name="barcode" style="font-size:0.95em; margin-bottom:0;" />
                 </div>
             </div>
         </xpath>
-            <xpath expr="//field[@name='detailed_type']" position="replace">
+        <xpath expr="//field[@name='detailed_type']" position="replace">
             <field name="detailed_type" string="Stock Item"/>
         </xpath>
-            
-            <xpath expr="//group[@name='group_general']//field[@name='detailed_type']" position="after">
+        <xpath expr="//field[@name='lang_of_origin']" position="replace">
+            <field name="lang_of_origin" string="Language"/>
+        </xpath>
+        <xpath expr="//group[@name='group_general']//field[@name='detailed_type']" position="after">
 
                 <field name="subtitle"/>
                  <field name="author_id"/>
@@ -26,13 +28,13 @@
                 <field name="main_distributor"/>
 
             
-            </xpath>
+        </xpath>
             
             <xpath expr="//page[@name='general_information']/group" position="inside">
                 <group>
                         <group string="deptartment and serie" class="oe_inline">
                             <field name="department_id"/>
-                            <field name="serie_id"/>
+                            <field name="serie_id" string="Series"/>
                             <field name="date_of_publication"/>
                         </group>
 <!--                         <group string="author" class="oe_inline">
@@ -46,11 +48,11 @@
                     
                             <field name="subtitle2"/>
                         </group>
-                        <group string="Other Info" class="oe_inline">
+<!--                         <group string="Other Info" class="oe_inline">
                         <field name="publisher"/>
                         <field name="main_distributor"/>
                     
-                    </group>
+                    </group> -->
                   
                 </group>
               
