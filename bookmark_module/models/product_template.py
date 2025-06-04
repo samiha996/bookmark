@@ -8,6 +8,13 @@ class ProductTemplate(models.Model):
     school_id = fields.Many2one('product.school', string="School")
     author_id = fields.Many2one('book.author', string="Author")
     author2_id = fields.Many2one('book.author', string="Author 2")
+    keyword_ids = fields.Many2many(
+        comodel_name="keywords",
+        relation="product_template_keyword_rel",
+        column1="product_id",
+        column2="keyword_id",
+        string="Keywords",
+    )
     title2 = fields.Char(string="Title 2")
     subtitle = fields.Char(string="Subtitle")
     subtitle2 = fields.Char(string="Subtitle 2")
