@@ -63,8 +63,9 @@
                     
                     </group> -->
                     
-                    
+                        <label for="url">Url</label>
                         <field name="url" widget="url" string="Url"/>
+                        <label for="bookmark_desciption">Description</label>
                         <field name="bookmark_description" string="Description"/>
                         
              
