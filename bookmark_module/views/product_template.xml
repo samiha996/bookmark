@@ -37,6 +37,15 @@
                             <field name="serie_id" string="Series"/>
                             <field name="date_of_publication"/>
                         </group>
+                        <group string="Physical Details">
+                            <field name="format_size"/>
+                            <field name="number_page"/>
+                            <label for="weight" invisible="product_variant_count &gt; 1 and not is_product_variant"/>
+                            <div class="o_row" name="weight" invisible="product_variant_count &gt; 1 and not is_product_variant">
+                                <field name="weight" class="oe_inline"/>
+                                <field name="weight_uom_name"/>
+                            </div>
+                        </group>
 <!--                         <group string="author" class="oe_inline">
                             <field name="author_id"/>
                             <field name="author2_id"/>
@@ -53,11 +62,7 @@
                         <field name="main_distributor"/>
                     
                     </group> -->
-                    <group string="Physical Details">
-                        <field name="format_size"/>
-                        <field name="number_page"/>
-                        <field name="weight"/>
-                    </group>
+                    
                     <group string="Other Details">
                         <field name="url" widget="url"/>
                         <field name="bookmark_description"/>
