@@ -14,4 +14,9 @@ class ProductTemplate(models.Model):
     date_of_publication = fields.Date(string="Date of Publication")
     publisher = fields.Many2one('publisher', string="Publisher")
     main_distributor = fields.Many2one('main.distributor', string="Main Distributor")
+    bookmark_type= fields.Char(string="Type")
+    url= fields.Char(string="Url")
+    bookmark_description = fields.Text(string="Description")
+    format_size= fields.Char(string="Format Size")
+    number_page= fields.Char(string="Number of Pages")
     
