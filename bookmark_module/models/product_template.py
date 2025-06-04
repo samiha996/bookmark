@@ -9,10 +9,10 @@ class ProductTemplate(models.Model):
     author_id = fields.Many2one('book.author', string="Author")
     author2_id = fields.Many2one('book.author', string="Author 2")
     keyword_ids = fields.Many2many(
-        comodel_name="keywords",
+        comodel_name="product.keyword",
         relation="product_template_keyword_rel",
-        column1="product_tmpl_id",
-        column2="keyword_id",
+        column1="product_template_id", 
+        column2="keyword_id",           
         string="Keywords",
     )
     title2 = fields.Char(string="Title 2")
