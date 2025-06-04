@@ -5,29 +5,54 @@
         <field name="model">product.product</field>
         <field name="inherit_id" ref="product.product_normal_form_view"/>
         <field name="arch" type="xml">
+            <xpath expr="//field[@name='sale_ok']" position="before">
+            <div class="row mt-1">
+                <div class="col-12 d-flex align-items-center mb-1">
+                    <label for="barcode">Barcode</label>
+                    <field name="barcode" style="font-size:0.95em; margin-bottom:0;" />
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//field[@name='detailed_type']" position="replace">
+            <field name="detailed_type" string="Stock Item"/>
+        </xpath>
+        <xpath expr="//field[@name='lang_of_origin']" position="replace">
+            <field name="lang_of_origin" string="Language"/>
+        </xpath>
+        <xpath expr="//group[@name='group_general']//field[@name='detailed_type']" position="after">
+
+                <field name="subtitle"/>
+                 <field name="author_id"/>
+                <field name="author2_id"/>
+                <field name="publisher"/>
+                <field name="main_distributor"/>
+
+            
+        </xpath>
+            
             <xpath expr="//page[@name='general_information']/group" position="inside">
                 <group>
                         <group string="deptartment and serie" class="oe_inline">
                             <field name="department_id"/>
-                            <field name="serie_id"/>
+                            <field name="serie_id" string="Series"/>
                             <field name="date_of_publication"/>
                         </group>
-                        <group string="author" class="oe_inline">
+<!--                         <group string="author" class="oe_inline">
                             <field name="author_id"/>
                             <field name="author2_id"/>
-                        </group>
+                        </group> -->
                     </group>
                     <group>
                         <group string="Titles" class="oe_inline">
                             <field name="title2"/>
-                            <field name="subtitle"/>
+<!--                             <field name="subtitle"/> -->
                             <field name="subtitle2"/>
                         </group>
-                        <group string="Other Info" class="oe_inline">
+<!--                         <group string="Other Info" class="oe_inline">
                         <field name="publisher"/>
                         <field name="main_distributor"/>
                     
-                    </group>
+                    </group> -->
 <!--                         <field name="x_publisher"/>
                         <field name="x_authors"/>
                         <field name="x_main_supplier"/> -->
