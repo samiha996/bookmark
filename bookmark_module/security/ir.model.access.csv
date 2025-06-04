@@ -5,3 +5,4 @@ access_serie,access_serie,model_serie,,1,1,1,1
 access_book_author,access_book_author,model_book_author,,1,1,1,1
 access_publisher,access_publisher,model_publisher,,1,1,1,1
 access_main_distributor,access_main_distributor,model_main_distributor,,1,1,1,1
+access_keywords,access_keywords,model_keywords,,1,1,1,1
