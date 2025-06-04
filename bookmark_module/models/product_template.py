@@ -11,7 +11,7 @@ class ProductTemplate(models.Model):
     keyword_ids = fields.Many2many(
         comodel_name="keywords",
         relation="product_template_keyword_rel",
-        column1="product_tmpl_id",
+        column1="product_id",
         column2="keyword_id",
         string="Keywords",
     )
