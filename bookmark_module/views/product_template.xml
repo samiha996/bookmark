@@ -5,30 +5,30 @@
         <field name="model">product.template</field>
         <field name="inherit_id" ref="product.product_template_only_form_view"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='sale_ok']" position="before">
-            <div class="row mt-1">
-                <div class="col-12 d-flex align-items-center mb-1">
-                    <label for="barcode">Barcode</label>
-                    <field name="barcode" style="font-size:0.95em; margin-bottom:0;" />
+            <xpath expr="//label[@for='name']" position="before">
+                <div class="row mt-1">
+                    <div  style="font-size:2em; margin-bottom:1;" class="col-12 d-flex align-items-center mb-1">
+                        <label for="barcode">Barcode</label><br/>
+                        <field name="barcode"/>
+                    </div>
                 </div>
-            </div>
-        </xpath>
-        <xpath expr="//field[@name='detailed_type']" position="replace">
-            <field name="detailed_type" string="Stock Item"/>
-        </xpath>
-        <xpath expr="//field[@name='lang_of_origin']" position="replace">
-            <field name="lang_of_origin" string="Language"/>
-        </xpath>
-        <xpath expr="//group[@name='group_general']//field[@name='detailed_type']" position="after">
-
-                <field name="subtitle"/>
-                 <field name="author_id"/>
-                <field name="author2_id"/>
-                <field name="publisher"/>
-                <field name="main_distributor"/>
-
-            
-        </xpath>
+            </xpath>
+            <xpath expr="//field[@name='detailed_type']" position="replace">
+                <field name="detailed_type" string="Stock Item"/>
+            </xpath>
+            <xpath expr="//field[@name='lang_of_origin']" position="replace">
+                <field name="lang_of_origin" string="Language"/>
+            </xpath>
+            <xpath expr="//group[@name='group_general']//field[@name='detailed_type']" position="after">
+    
+                    <field name="subtitle"/>
+                     <field name="author_id"/>
+                    <field name="author2_id"/>
+                    <field name="publisher"/>
+                    <field name="main_distributor"/>
+    
+                
+            </xpath>
             
             <xpath expr="//page[@name='general_information']/group" position="inside">
                 <group>
@@ -96,4 +96,5 @@
         </field>
     </record>
 </odoo>
+
 
